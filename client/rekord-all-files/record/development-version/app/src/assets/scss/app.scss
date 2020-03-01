@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Record Music Event Multipurpose
+Version:    1.0.0
+
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+1. All common core files (Variables / colors / bootstrap )
+2- Plugins
+3- Panel Components
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[1. All common core files]
+*/
+//// Necessary Modules
+@import 'basic/variables';
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../../node_modules/lightslider/dist/css/lightslider";
+@import "../../../../node_modules/lightgallery/dist/css/lightgallery.min";
+@import "../../../../node_modules/node-snackbar/dist/snackbar.min";
+@import '../fonts/lineicons';
+@import '../fonts/roboto/roboto';
+@import '../scss/libs/animations';
+@import "../scss/libs/lightslider";
+/*--Responsive Helpers-------------------------------------------------*/
+@import "basic/responsive-helper";
+/*--Nav-------------------------------------------------*/
+@import "basic/navDefault";
+/*--Functions-------------------------------------------------*/
+@import 'basic/mixins';
+/*--Base-------------------------------------------------*/
+@import "basic/base";
+/*--Breadcrumbs-------------------------------------------------*/
+@import "basic/breadcrumbs";
+/*--Fiqures-------------------------------------------------*/
+@import "basic/figure";
+/*--Pre loader-------------------------------------------------*/
+@import "basic/preloader";
+/*--Social-------------------------------------------------*/
+@import "basic/social";
+/*--Helpers-------------------------------------------------*/
+@import "basic/helper";
+/*--Colors-------------------------------------------------*/
+@import "libs/colors";
+/*--LightSlider-------------------------------------------------*/
+@import "components/lightSlider";
+/*------------------------------------------------------------------
+/*--Letter Avatars-------------------------------------------------*/
+@import "libs/letters";
+/*--Components-------------------------------------------------*/
+@import "components/_nav";
+@import "components/player";
+@import "components/_xvslider";
+@import "components/_forms";
+@import "components/_forms-material";
+@import "components/sidebarMenu";
+@import "components/shortcodes";
+@import "components/services";
+@import "components/sticky";
+@import "components/counter";
+@import "components/nav";
+@import "components/hero";
+@import "components/control-sidebar";
+@import "components/timeline";
+@import "components/preloaders";
+@import "components/search";
+@import "basic/overlay";
+@import "basic/card";
+@import "basic/theme-dark";
+@import "templates/template-contact";
+@import "basic/rtl";
+
+

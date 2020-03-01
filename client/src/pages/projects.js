@@ -1,13 +1,9 @@
-import React, { Component } from "react";
+import React, {Component} from 'react';
 
 class Projects extends Component {
-
-    render() {
-        return (
-<>
-</>
-        )
-    }
+  render() {
+    return <></>;
+  }
 }
 
-export default Projects
+export default Projects;
