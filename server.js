@@ -15,12 +15,12 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Define API routes here
-app.use(routes);
+// app.use(routes);
 // Send every other request to the React app
-mongoose.connect(
-  process.env.MONGODB_URI ||
-    'mongodb://heroku_bdq0hmmf:ufc9jh2h6453oc1qfa50i7ea5m@ds259347.mlab.com:59347/heroku_bdq0hmmf'
-);
+// mongoose.connect(
+//   process.env.MONGODB_URI ||
+//     'mongodb://heroku_bdq0hmmf:ufc9jh2h6453oc1qfa50i7ea5m@ds259347.mlab.com:59347/heroku_bdq0hmmf'
+// );
 
 // Define any API routes before this runs
 app.get('*', (req, res) => {

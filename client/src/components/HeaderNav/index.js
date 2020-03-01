@@ -3,15 +3,9 @@ import clsx from 'clsx';
 import {makeStyles} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Grid from '@material-ui/core/Grid';
-import List from '@material-ui/core/List';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ClearIcon from '@material-ui/icons/Clear';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
 import NavLink from '../NavLink';
 import NavList from '../NavList';
 
@@ -77,6 +71,7 @@ export default function headerNav() {
           </IconButton>
         </Grid>
       </Grid>
+      {/* drawer */}
       <Drawer
         className={classes.drawer}
         variant='persistent'
