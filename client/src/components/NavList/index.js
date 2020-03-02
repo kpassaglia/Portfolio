@@ -3,23 +3,28 @@ import NavLink from '../NavLink';
 import Hidden from '@material-ui/core/Hidden';
 
 const mainNavLinks = [
-  {name: 'about', link: '/about', size: 'none'},
-  {name: 'projects', link: '/projects', size: 'none'},
-  {name: 'contact', link: '/contact', size: 'none'}
+  {name: 'about', link: '/about'},
+  {name: 'projects', link: '/projects'},
+  {name: 'contact', link: '/contact'}
 ];
 
 const secondaryNavLinks = [
-  {name: 'cool site', link: '/sites'},
-  {name: 'music', link: '/music'},
-  {name: 'travel', link: '/travel'}
+  {name: 'cool tech', link: '/tech'},
+  {name: 'resources', link: '/resources'},
+  {name: 'communitiy talk', link: '/talk'}
 ];
 
 export default function navList(props) {
   return (
-    <div>
+    <div className={props.parentClass}>
       <Hidden only={props.mainSize}>
         {mainNavLinks.map((links, index) => (
-          <NavLink key={index} name={links.name} link={links.link} />
+          <NavLink
+            class={props.class}
+            key={index}
+            name={links.name}
+            link={links.link}
+          />
         ))}
       </Hidden>
       <Hidden only={props.secondarySize}>

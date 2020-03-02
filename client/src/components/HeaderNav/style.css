@@ -1,0 +1,22 @@
+.headerLink {
+  color: white !important;
+}
+.drawer {
+  width: 0;
+  flex-shrink: 0;
+}
+
+.navLogo {
+  display: flex;
+  justify-content: flex-start;
+}
+.navList {
+  display: flex;
+  justify-content: center;
+}
+
+.navDrawer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}

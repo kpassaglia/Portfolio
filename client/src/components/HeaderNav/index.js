@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+import './style.css';
 import {makeStyles} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Grid from '@material-ui/core/Grid';
@@ -13,14 +13,6 @@ const drawerWidth = 240;
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex'
-  },
-  title: {
-    flexGrow: 1,
-    display: 'flex'
-  },
-  drawer: {
-    width: 0,
-    flexShrink: 0
   },
   drawerPaper: {
     width: drawerWidth
@@ -49,26 +41,27 @@ export default function headerNav() {
   return (
     <div>
       <Grid container spacing={3}>
-        <Grid item xs={4}>
-          <NavLink link='/' name='Kevin Passaglia'></NavLink>
+        <Grid className='navLogo' item xs={4}>
+          <NavLink class='headerLink' link='/' name='Kevin Passaglia'></NavLink>
         </Grid>
-        <Grid item xs={4}>
+        <Grid className='navList' item xs={4}>
           <NavList
+            class='headerLink'
+            parentClass='navList'
             mainSize={['xs', 'sm']}
             secondarySize={['lg', 'md', 'sm', 'xl', 'xs']}></NavList>
         </Grid>
-        <Grid item xs={4}>
+        <Grid className='headerLink navDrawer' item xs={4}>
           <IconButton
             aria-label='open drawer'
-            edge='end'
             onClick={handleDrawerOpen}
-            className={clsx(open)}>
+            className='headerLink'>
             <MenuIcon />
           </IconButton>
         </Grid>
       </Grid>
       <Drawer
-        className={classes.drawer}
+        className='drawer'
         variant='persistent'
         anchor='right'
         open={open}
