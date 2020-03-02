@@ -1,12 +1,32 @@
 import React from 'react';
 import NavLink from '../NavLink';
+import Hidden from '@material-ui/core/Hidden';
 
-export default function navList() {
+const mainNavLinks = [
+  {name: 'about', link: '/about', size: 'none'},
+  {name: 'projects', link: '/projects', size: 'none'},
+  {name: 'contact', link: '/contact', size: 'none'}
+];
+
+const secondaryNavLinks = [
+  {name: 'cool site', link: '/sites'},
+  {name: 'music', link: '/music'},
+  {name: 'travel', link: '/travel'}
+];
+
+export default function navList(props) {
   return (
     <div>
-      <NavLink link='/about' name='about'></NavLink>
-      <NavLink link='/projects' name='projects'></NavLink>
-      <NavLink link='/contact' name='contact'></NavLink>
+      <Hidden only={props.mainSize}>
+        {mainNavLinks.map((links, index) => (
+          <NavLink key={index} name={links.name} link={links.link} />
+        ))}
+      </Hidden>
+      <Hidden only={props.secondarySize}>
+        {secondaryNavLinks.map((links, index) => (
+          <NavLink key={index} name={links.name} link={links.link} />
+        ))}
+      </Hidden>
     </div>
   );
 }

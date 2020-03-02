@@ -34,12 +34,6 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const navLinks = [
-  {name: 'about', link: '/about'},
-  {name: 'projects', link: '/projects'},
-  {name: 'contact', link: '/contact'}
-];
-
 export default function headerNav() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -59,7 +53,9 @@ export default function headerNav() {
           <NavLink link='/' name='Kevin Passaglia'></NavLink>
         </Grid>
         <Grid item xs={4}>
-          <NavList></NavList>
+          <NavList
+            mainSize={['xs', 'sm']}
+            secondarySize={['lg', 'md', 'sm', 'xl', 'xs']}></NavList>
         </Grid>
         <Grid item xs={4}>
           <IconButton
@@ -71,7 +67,6 @@ export default function headerNav() {
           </IconButton>
         </Grid>
       </Grid>
-      {/* drawer */}
       <Drawer
         className={classes.drawer}
         variant='persistent'
@@ -85,9 +80,7 @@ export default function headerNav() {
             <ClearIcon />
           </IconButton>
         </div>
-        {navLinks.map((links, index) => (
-          <NavLink key={index} name={links.name} link={links.link} />
-        ))}
+        <NavList mainSize={['md', 'lg', 'xl']}></NavList>
       </Drawer>
     </div>
   );
