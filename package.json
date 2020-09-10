@@ -25,13 +25,8 @@
     "express": "^4.16.3",
     "if-env": "^1.0.4",
     "mongoose": "^5.9.2",
-<<<<<<< HEAD
-    "react-router-dom": "^5.0.1",
-    "react-scroll-parallax": "^2.3.4"
-=======
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "react-router-dom": "^5.0.1"
->>>>>>> d8eb69428d7f7308984b0945b76715b42b9e2891
   }
 }
