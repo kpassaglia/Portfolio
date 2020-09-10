@@ -10,25 +10,32 @@ import NavLink from '../NavLink';
 import NavList from '../NavList';
 
 const drawerWidth = 240;
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex'
+    display: 'flex',
   },
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
   },
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
-    justifyContent: 'flex-end'
-  }
+    justifyContent: 'flex-end',
+  },
 }));
 
 export default function headerNav() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
+  const navStyle = {
+    position: 'fixed',
+    top: 0,
+    right: 0,
+    left: 0,
+    zIndex: 99,
+  };
 
   //Drawer State (Might Be able to move)
   const handleDrawerOpen = () => {
@@ -39,7 +46,7 @@ export default function headerNav() {
   };
 
   return (
-    <div>
+    <div style={navStyle}>
       <Grid container spacing={3}>
         <Grid className='navLogo' item xs={4}>
           <NavLink class='headerLink' link='/' name='Kevin Passaglia'></NavLink>
@@ -66,7 +73,7 @@ export default function headerNav() {
         anchor='right'
         open={open}
         classes={{
-          paper: classes.drawerPaper
+          paper: classes.drawerPaper,
         }}>
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>

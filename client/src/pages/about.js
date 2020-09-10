@@ -1,8 +1,13 @@
 import React, {Component} from 'react';
+import ParallaxBanner from '../components/ParallaxBanner';
 
 class About extends Component {
   render() {
-    return <></>;
+    return (
+      <>
+        <ParallaxBanner class='about' page='About'></ParallaxBanner>
+      </>
+    );
   }
 }
 

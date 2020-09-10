@@ -8,13 +8,12 @@ mongoose.connect(
   "mongodb://heroku_bdq0hmmf:ufc9jh2h6453oc1qfa50i7ea5m@ds259347.mlab.com:59347/heroku_bdq0hmmf"
 );
 
-const profileSeed = [
-  {
+const profileSeed = [{
     name: "Kevin Passaglia",
     userName: "KPizzle",
     instrument: "Sax",
     skillLevel: "Expert",
-    musicGenres:["Heavy Metal","Yacht Rock","Dub"],
+    musicGenres: ["Heavy Metal", "Yacht Rock", "Dub"],
     image: "N/A",
     info: "combo well with killer jaz flute players",
     location: "Chicago",
@@ -26,7 +25,7 @@ const profileSeed = [
     userName: "CPizzle",
     instrument: "drums",
     skillLevel: "Expert",
-    musicGenres:["Yacht Rock","Dub"],
+    musicGenres: ["Yacht Rock", "Dub"],
     image: "N/A",
     info: "like to jam",
     location: "Chicago",
@@ -38,7 +37,7 @@ const profileSeed = [
     userName: "PDizzle",
     instrument: "guitar",
     skillLevel: "Expert",
-    musicGenres:["Heavy Metal","Yacht Rock"],
+    musicGenres: ["Heavy Metal", "Yacht Rock"],
     image: "N/A",
     info: "more cowbell!",
     location: "Chicago",
@@ -50,7 +49,7 @@ const profileSeed = [
     userName: "DLizzo",
     instrument: "bass",
     skillLevel: "Expert",
-    musicGenres:["Heavy Metal","Yacht Rock","Jazz"],
+    musicGenres: ["Heavy Metal", "Yacht Rock", "Jazz"],
     image: "N/A",
     info: "funkadelic",
     location: "Chicago",
