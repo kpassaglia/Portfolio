@@ -11,32 +11,21 @@ import './App.css';
 import HeaderNav from './components/HeaderNav';
 import {ParallaxProvider} from 'react-scroll-parallax';
 
-const backgroundStyle = {
-  backgroundImage: `url(${Background})`,
-  backgroundSize: 'cover',
-  margin: 0,
-  width: '100vw',
-  maxWidth: '2000px',
-  height: '100vh',
-};
-
 class App extends Component {
   render() {
     return (
       <div className='App'>
         <ParallaxProvider>
-          <Container className='background-image' style={backgroundStyle}>
-            <HeaderNav></HeaderNav>
-            <Router>
-              <Switch>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/projects' component={Projects} />
-                <Route exact path='/contact' component={Contact} />
-                <Route component={NotFound} />
-              </Switch>
-            </Router>
-          </Container>
+          <HeaderNav></HeaderNav>
+          <Router>
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/contact' component={Contact} />
+              <Route component={NotFound} />
+            </Switch>
+          </Router>
         </ParallaxProvider>
       </div>
     );

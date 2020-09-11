@@ -23,10 +23,10 @@ const paperContent = [
 ];
 
 const backgroundImages = [
-  {key: '1', name: 'art1', test: 'test1'},
-  {key: '2', name: 'art2', test: 'test2'},
-  {key: '3', name: 'art3', test: 'test3'},
-  {key: '4', name: 'art4', test: 'test4'},
+  {name: `${Art1}`, alt: 'art1'},
+  {name: `${Art2}`, alt: 'art2'},
+  {name: `${Art3}`, alt: 'art3'},
+  {name: `${Art4}`, alt: 'art4'},
 ];
 
 class Home extends Component {
@@ -34,11 +34,7 @@ class Home extends Component {
     return (
       <>
         {backgroundImages.map((backgrounds, index) => (
-          <ScrollSnap
-            index={index}
-            name={backgrounds.name}
-            keys={backgrounds.key}
-          />
+          <ScrollSnap index={index} name={backgrounds.name} />
         ))}
 
         {/* {paperContent.map((papers, index) => (

@@ -2,23 +2,24 @@ import React from 'react';
 import Container from '@material-ui/core/Container';
 import {makeStyles} from '@material-ui/core/styles';
 
-export default function ScrollSnap(props) {
-  const useStyles = makeStyles({
-    root: {
-      backgrondImage: `Art${props.keys}`,
-      height: '100vh',
-      width: '100vw',
-      scrollSnapAlign: 'start',
-    },
-  });
+const useStyles = makeStyles({
+  root: {
+    backgroundSize: 'cover',
+    scrollSnapAlign: 'start',
+    margin: 0,
+    width: '100vw',
+    maxWidth: '2000px',
+    height: '100vh',
+  },
+});
 
+export default function ScrollSnap(props) {
   const classes = useStyles();
   return (
     <>
-      <Container className={classes.root}>
-        {props.keys}
-        <img src={require(`../assets/images/art/${props.name}.jpg`)} />
-      </Container>
+      <Container
+        className={classes.root}
+        style={{backgroundImage: `url(${props.name})`}}></Container>
     </>
   );
 }
