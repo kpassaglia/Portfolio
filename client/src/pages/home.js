@@ -17,7 +17,7 @@ class Home extends Component {
     return (
       <ScrollSnapParent
         backgroundList={backgroundImages}
-        child={<Grid></Grid>}></ScrollSnapParent>
+        child={'<Grid></Grid>'}></ScrollSnapParent>
     );
   }
 }
