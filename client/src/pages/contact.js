@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ParallaxBanner from '../components/ParallaxBanner';
+import {ParallaxBanner, Container, Paper, ScrollSnap} from '../components/';
 
 class Contact extends Component {
   render() {

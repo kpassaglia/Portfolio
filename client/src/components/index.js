@@ -3,6 +3,6 @@ import Grid from './GridFluid';
 import Nav from './HeaderNav';
 import Paper from './Paper';
 import ParallaxBanner from './ParallaxBanner';
-import ScrollSnap from './ScrollSnap';
+import ScrollSnapElement from './ScrollSnapElement';
 
-export {Container, Grid, Nav, Paper, ParallaxBanner, ScrollSnap};
+export {Container, Grid, Nav, Paper, ParallaxBanner, ScrollSnapElement};

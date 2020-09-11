@@ -2237,6 +2237,11 @@ saslprep@^1.0.0:
   dependencies:
     sparse-bitfield "^3.0.3"
 
+scroll-snap@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/scroll-snap/-/scroll-snap-3.0.2.tgz#895920af28772a701c335536b8f71f0f13eadba1"
+  integrity sha512-uZhLGscyY4Icm8hFv9MFuh0zZ38ZFsTj+rafT8osoS5sRtfXwb7QxaGJdM0XJtgKU/JGoX8z+rq8s5jroxSxpw==
+
 semver-diff@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/semver-diff/-/semver-diff-2.1.0.tgz#4bbb8437c8d37e4b0cf1a68fd726ec6d645d6d36"
