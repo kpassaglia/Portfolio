@@ -23,10 +23,10 @@ const paperContent = [
 ];
 
 const backgroundImages = [
-  {key: '1', name: '../assets/images/art/art1.jpg', test: 'test1'},
-  {key: '2', name: '../assets/images/art/art2.jpg', test: 'test2'},
-  {key: '3', name: '../assets/images/art/art3.jpg', test: 'test3'},
-  {key: '4', name: '../assets/images/art/art4.jpg', test: 'test4'},
+  {key: '1', name: 'art1', test: 'test1'},
+  {key: '2', name: 'art2', test: 'test2'},
+  {key: '3', name: 'art3', test: 'test3'},
+  {key: '4', name: 'art4', test: 'test4'},
 ];
 
 class Home extends Component {
