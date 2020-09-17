@@ -6,6 +6,8 @@ class Contact extends Component {
     return (
       <>
         <ParallaxBanner class='contact' page='Contact'></ParallaxBanner>
+        <h1>Contact CoolerProblems</h1>
+        <div>ADD Contact Form</div>
       </>
     );
   }

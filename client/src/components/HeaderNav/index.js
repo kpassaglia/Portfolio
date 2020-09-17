@@ -49,7 +49,7 @@ export default function headerNav() {
     <div style={navStyle}>
       <Grid container spacing={3}>
         <Grid className='navLogo' item xs={4}>
-          <NavLink class='headerLink' link='/' name='Kevin Passaglia'></NavLink>
+          <NavLink class='headerLink' link='/' name='CoolerProblems'></NavLink>
         </Grid>
         <Grid className='navList' item xs={4}>
           <NavList

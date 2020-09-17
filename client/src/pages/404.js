@@ -6,6 +6,7 @@ class NotFound extends Component {
     return (
       <>
         <ParallaxBanner class='404' page='404'></ParallaxBanner>
+        <h1>Not very cool server error</h1>
       </>
     );
   }

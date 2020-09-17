@@ -6,6 +6,8 @@ class Projects extends Component {
     return (
       <>
         <ParallaxBanner class='projects' page='Projects'></ParallaxBanner>
+        <h1>CoolerProjects</h1>
+        <div>Add current stuff working on</div>
       </>
     );
   }
