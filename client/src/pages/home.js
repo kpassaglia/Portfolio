@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import ScrollSnapParent from '../components/ScollSnapParent';
 import {Art1, Art2, Art3, Art4} from '../components/assets/images/art';
-import {ParallaxBanner, Grid, Container, Paper} from '../components';
+// import {Grid} from '../components/';
+// ParallaxBanner,Container, Paper, ScrollSnap
 
 const backgroundImages = [
   {name: `${Art1}`, alt: 'art1'},
@@ -10,7 +11,7 @@ const backgroundImages = [
   {name: `${Art4}`, alt: 'art4'},
 ];
 
-const Wrapper = ({children}) => <Grid></Grid>;
+// const Wrapper = ({children}) => <Grid></Grid>;
 
 class Home extends Component {
   render() {

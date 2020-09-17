@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function headerNav() {
+export default function PersistentDrawerRight() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const navStyle = {
