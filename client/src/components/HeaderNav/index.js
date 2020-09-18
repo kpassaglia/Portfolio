@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ClearIcon from '@material-ui/icons/Clear';
+import Parrot from '../assets/images/art/gandalf_parrot.gif';
 import NavLink from '../NavLink';
 import NavList from '../NavList';
 
@@ -24,18 +25,21 @@ const useStyles = makeStyles((theme) => ({
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
   },
-}));
-
-export default function PersistentDrawerRight() {
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
-  const navStyle = {
+  navStyle: {
     position: 'fixed',
     top: 0,
     right: 0,
     left: 0,
     zIndex: 99,
-  };
+    marginLeft: '10px',
+    marginRight: '10px',
+    marginTop: '5px',
+  },
+}));
+
+export default function PersistentDrawerRight() {
+  const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
 
   //Drawer State (Might Be able to move)
   const handleDrawerOpen = () => {
@@ -46,9 +50,10 @@ export default function PersistentDrawerRight() {
   };
 
   return (
-    <div style={navStyle}>
+    <div className={classes.navStyle}>
       <Grid container spacing={3}>
         <Grid className='navLogo' item xs={4}>
+          <img className='logoImg' src={Parrot} alt='loading...' />
           <NavLink class='headerLink' link='/' name='CoolerProblems'></NavLink>
         </Grid>
         <Grid className='navList' item xs={4}>

@@ -24,7 +24,7 @@ class ScrollSnapParent extends Component {
       <div id='snapParent' ref={this.parent}>
         {this.props.backgroundList.map((backgrounds, index) => (
           <ScrollSnapElement
-            index={index}
+            key={index}
             name={backgrounds.name}
             child={this.props.child}
           />
