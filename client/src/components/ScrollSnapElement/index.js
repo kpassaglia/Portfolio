@@ -4,12 +4,10 @@ import './style.css';
 
 export default function ScrollSnapElement(props) {
   return (
-    <div>
-      <Container
-        className='snapElement'
-        style={{backgroundImage: `url(${props.name})`}}>
-        {props.child}
-      </Container>
-    </div>
+    <Container
+      className='snapElement'
+      style={{backgroundImage: `url(${props.name})`}}>
+      {props.child}
+    </Container>
   );
 }
