@@ -1,6 +1,6 @@
 import React from 'react';
 import {ParallaxBanner} from 'react-scroll-parallax';
-import chicagoImage from '../assets/images/stock/chicago.jpg';
+import {Stock1} from '../assets/images/stock';
 
 //Parallax Package: https://www.npmjs.com/package/react-scroll-parallax#banner-layers-prop
 
@@ -10,11 +10,11 @@ export default function parallaxBanner(props) {
       className={props.class}
       layers={[
         {
-          image: chicagoImage,
+          image: Stock1,
           amount: 1,
         },
         {
-          image: chicagoImage,
+          image: Stock1,
           amount: -1,
         },
       ]}
