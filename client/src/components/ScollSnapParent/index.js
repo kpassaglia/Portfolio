@@ -27,6 +27,7 @@ class ScrollSnapParent extends Component {
             key={index}
             name={backgrounds.name}
             child={this.props.child}
+            title={backgrounds.title}
           />
         ))}
       </div>

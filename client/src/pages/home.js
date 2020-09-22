@@ -6,7 +6,7 @@ import {Outdoor1} from '../components/assets/images/outdoor';
 // ParallaxBanner,Container, Paper, ScrollSnap
 
 const backgroundImages = [
-  {name: `${Outdoor1}`, alt: 'outdoor1'},
+  {name: `${Outdoor1}`, alt: 'outdoor1', title: 'CoolerProblems'},
   {name: `${Art1}`, alt: 'art1'},
   {name: `${Art2}`, alt: 'art2'},
   {name: `${Art3}`, alt: 'art3'},

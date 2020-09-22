@@ -19,7 +19,12 @@ export default function SimplePaper(props) {
 
   return (
     <div className={classes.root}>
-      <Paper elevation={3}>{props.name}</Paper>
+      {props.paperList.map((papers, index) => (
+        <Paper elevation={3} key={index}>
+          {papers.name}
+          {papers.href}
+        </Paper>
+      ))}
     </div>
   );
 }

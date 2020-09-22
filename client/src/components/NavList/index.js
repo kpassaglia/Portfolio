@@ -9,7 +9,7 @@ const mainNavLinks = [
 ];
 
 const secondaryNavLinks = [
-  {name: 'hotspurs', link: '/spurs'},
+  {name: 'futbol', link: '/futbol'},
   {name: 'technology', link: '/tech'},
   {name: 'music', link: '/music'},
   {name: 'creators', link: '/creators'},

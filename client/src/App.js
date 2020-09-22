@@ -5,7 +5,7 @@ import {
   About,
   Projects,
   Contact,
-  Spurs,
+  Futbol,
   Tech,
   Music,
   Creators,
@@ -27,7 +27,7 @@ class App extends Component {
               <Route exact path='/about' component={About} />
               <Route exact path='/projects' component={Projects} />
               <Route exact path='/contact' component={Contact} />
-              <Route exact path='/spurs' component={Spurs} />
+              <Route exact path='/futbol' component={Futbol} />
               <Route exact path='/tech' component={Tech} />
               <Route exact path='/music' component={Music} />
               <Route exact path='/creators' component={Creators} />

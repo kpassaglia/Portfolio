@@ -7,6 +7,7 @@ export default function ScrollSnapElement(props) {
     <Container
       className='snapElement'
       style={{backgroundImage: `url(${props.name})`}}>
+      <h1>{props.title}</h1>
       {props.child}
     </Container>
   );
