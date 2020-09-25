@@ -1,23 +1,43 @@
 import React, {Component} from 'react';
 import {ScrollSnapParent, Paper} from '../components';
-import {Art1, Art2, Art3, Art4} from '../components/assets/images/art';
-import {Outdoor1} from '../components/assets/images/outdoor';
+import {
+  Creator1,
+  Creator2,
+  Creator3,
+  Creator4,
+} from '../components/assets/images/creators';
 const backgroundImages = [
-  {name: `${Outdoor1}`, alt: 'outdoor1', title: 'CoolerCreators'},
-  {name: `${Art1}`, alt: 'art1'},
-  {name: `${Art2}`, alt: 'art2'},
-  {name: `${Art3}`, alt: 'art3'},
-  {name: `${Art4}`, alt: 'art4'},
+  {name: `${Creator1}`, alt: 'creator1', title: 'CoolerCreators'},
+  {name: `${Creator2}`, alt: 'creator2'},
+  {name: `${Creator3}`, alt: 'creator3'},
+  {name: `${Creator4}`, alt: 'creator4'},
 ];
 
 const creatorDetails = [
   {
-    name: 'Simo Ahava',
+    creator: 'Russel Beaver',
+    category: 'design',
+    href: 'https://alsoknownas.us/',
+    name: 'Also Known As',
+  },
+  {
+    creator: 'Mark Wilson',
+    category: 'art',
+    href: 'https://onetie-alltie.com/',
+    name: 'One Tie All Tie',
+  },
+  {
+    creator: 'Simo Ahava',
     category: 'analytics',
     href: 'https://www.simoahava.com/',
+    name: 'Simo Ahava Blog',
   },
-  {name: 'Russel Beaver', category: 'design', href: 'https://alsoknownas.us/'},
-  {name: 'Mark Wilson', category: 'art', href: 'https://onetie-alltie.com/'},
+  {
+    creator: 'Avinash Kaushik',
+    category: 'analytics',
+    href: 'https://www.kaushik.net/avinash/',
+    name: "Occam's Razor",
+  },
 ];
 
 class Creators extends Component {
