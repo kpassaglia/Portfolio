@@ -6,11 +6,11 @@ import {Outdoor1} from '../components/assets/images/outdoor';
 // ParallaxBanner,Container, Paper, ScrollSnap
 
 const backgroundImages = [
-  {name: `${Outdoor1}`, alt: 'outdoor1', title: 'CoolerProblems'},
-  {name: `${Art1}`, alt: 'art1'},
-  {name: `${Art2}`, alt: 'art2'},
-  {name: `${Art3}`, alt: 'art3'},
-  {name: `${Art4}`, alt: 'art4'},
+  {content: `${Outdoor1}`, alt: 'outdoor1', title: 'CoolerProblems'},
+  {content: `${Art1}`, alt: 'art1'},
+  {content: `${Art2}`, alt: 'art2'},
+  {content: `${Art3}`, alt: 'art3'},
+  {content: `${Art4}`, alt: 'art4'},
 ];
 
 // const Wrapper = ({children}) => <Grid></Grid>;
@@ -36,10 +36,10 @@ export default Home;
 // };
 
 // const paperContent = [
-//   {name: 'about', link: '/about'},
-//   {name: 'projects', link: '/projects'},
-//   {name: 'contact', link: '/contact'},
-//   {name: 'cool tech', link: '/tech'},
-//   {name: 'resources', link: '/resources'},
-//   {name: 'communitiy talk', link: '/talk'},
+//   {content: 'about', link: '/about'},
+//   {content: 'projects', link: '/projects'},
+//   {content: 'contact', link: '/contact'},
+//   {content: 'cool tech', link: '/tech'},
+//   {content: 'resources', link: '/resources'},
+//   {content: 'communitiy talk', link: '/talk'},
 // ];

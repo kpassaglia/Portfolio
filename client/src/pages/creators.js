@@ -6,38 +6,56 @@ import {
   Creator3,
   Creator4,
 } from '../components/assets/images/creators';
-const backgroundImages = [
-  {name: `${Creator1}`, alt: 'creator1', title: 'CoolerCreators'},
-  {name: `${Creator2}`, alt: 'creator2'},
-  {name: `${Creator3}`, alt: 'creator3'},
-  {name: `${Creator4}`, alt: 'creator4'},
-];
+import {Stock1, Stock2} from '../components/assets/images/stock';
 
 const creatorDetails = [
   {
-    creator: 'Russel Beaver',
+    name: 'Russel Beaver',
     category: 'design',
     href: 'https://alsoknownas.us/',
-    name: 'Also Known As',
+    title: 'Also Known As',
   },
   {
-    creator: 'Mark Wilson',
+    name: 'Ryan Moore',
+    category: 'photography',
+    href: 'https://www.ryanmoorephotography.com/',
+    title: 'Ryan Moore Photography',
+  },
+  {
+    name: 'Ela and Jason Finch',
+    category: 'photography',
+    href: 'https://studiofinch.com/',
+    title: 'Studio Finch',
+  },
+  {
+    name: 'Mark Wilson',
     category: 'art',
     href: 'https://onetie-alltie.com/',
-    name: 'One Tie All Tie',
+    title: 'One Tie All Tie',
   },
   {
-    creator: 'Simo Ahava',
+    name: 'Simo Ahava',
     category: 'analytics',
     href: 'https://www.simoahava.com/',
-    name: 'Simo Ahava Blog',
+    title: 'Simo Ahava Blog',
   },
   {
-    creator: 'Avinash Kaushik',
+    name: 'Avinash Kaushik',
     category: 'analytics',
     href: 'https://www.kaushik.net/avinash/',
-    name: "Occam's Razor",
+    title: "Occam's Razor",
   },
+];
+//Loop - put function in varaible
+//Also Consider housing arrays in there own location
+
+const backgroundImages = [
+  {content: `${Creator1}`, alt: 'creator1', title: creatorDetails[0].title},
+  {content: `${Stock1}`, alt: 'creator2', title: creatorDetails[1].title},
+  {content: `${Stock2}`, alt: 'creator3', title: creatorDetails[2].title},
+  {content: `${Creator2}`, alt: 'creator4', title: creatorDetails[3].title},
+  {content: `${Creator3}`, alt: 'creator5', title: creatorDetails[4].title},
+  {content: `${Creator4}`, alt: 'creator6', title: creatorDetails[5].title},
 ];
 
 class Creators extends Component {

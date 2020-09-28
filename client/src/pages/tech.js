@@ -5,11 +5,11 @@ import ScrollSnapParent from '../components/ScollSnapParent';
 import {Art1, Art2, Art3, Art4} from '../components/assets/images/art';
 import {Outdoor1} from '../components/assets/images/outdoor';
 const backgroundImages = [
-  {name: `${Outdoor1}`, alt: 'outdoor1', title: 'CoolerTech'},
-  {name: `${Art1}`, alt: 'art1'},
-  {name: `${Art2}`, alt: 'art2'},
-  {name: `${Art3}`, alt: 'art3'},
-  {name: `${Art4}`, alt: 'art4'},
+  {content: `${Outdoor1}`, alt: 'outdoor1', title: 'CoolerTech'},
+  {content: `${Art1}`, alt: 'art1'},
+  {content: `${Art2}`, alt: 'art2'},
+  {content: `${Art3}`, alt: 'art3'},
+  {content: `${Art4}`, alt: 'art4'},
 ];
 
 class Tech extends Component {
